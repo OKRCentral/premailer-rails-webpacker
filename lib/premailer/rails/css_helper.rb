@@ -57,6 +57,8 @@ class Premailer
           CSSLoaders::FileSystemLoader
         when :asset_pipeline
           CSSLoaders::AssetPipelineLoader
+        when :webpacker
+          CSSLoaders::WebpackLoader
         when :network
           CSSLoaders::NetworkLoader
         else
